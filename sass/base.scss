@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    border: 0 solid transparent;
+    scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+}
+
+// remove all animations, transitions and smooth scroll for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// reset list style
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
+// reset anchor style
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    // list-style: none;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+// inherit fonts for inputs and buttons
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+// prevent iOS font size change
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+
+}
+
+:root {
+
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-navy-blue: #052c43;
+    --clr-lite-gray: rgba(0, 0, 0, 0.4);
+    --clr-sky-blue-200: #267aa4;
+    --clr-orange: #cf7500;
+    --clr-lite-orange: #f4e6d8;
+    --clr-yellow: #d1b54a;
+    --clr-lite-yellow: #f5efd8;
+    --clr-green: #8bbd8e;
+    --clr-lite-green: #dcebdd;
+    --clr-dark-pink: #cb9696;
+    --clr-lite-pink: #f5ebeb;
+    --clr-lite-sky-blue: #81c2e2;
+    --clr-sky-600: #d4eaf5;
+    --clr-dark-blue: #0d6efd;
+    --clr-para: #808080;
+    --clr-lite-blue-500: #3099cd;
+    --clr-icons: #81c2e2;
+
+    --btn-box-shadow: box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+
+    --ffamily-poppins: 'Poppins', sans-serif;
+
+
+
+}
