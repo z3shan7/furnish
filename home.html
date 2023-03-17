@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>furnish</title>
 </head>
@@ -18,17 +21,52 @@
     <header>
 
         <section class="hero">
-            <div class="hero__text">
-                <h1 class="heading-2">
-                    Best Design of
-                    <span> Furniture Collections</span>
-                </h1>
+            <nav class="navbar section-center">
+                <div class="navbar__content ">
 
 
+                    <div class="navbar__logoBox">
+                        <a href="#home.html" class="navbar__logoLink">Furnish</a>
+                    </div>
+
+                    <ul class="navbar__list">
+                        <li><a href="#" class="navbar__navLinks active">Home</a></li>
+                        <li><a href="#" class="navbar__navLinks">About</a></li>
+                        <li><a href="#" class="navbar__navLinks">Collection</a></li>
+                        <li><a href="#" class="navbar__navLinks">Blog</a></li>
+                        <li><a href="#" class="navbar__navLinks">Contact</a></li>
+                    </ul>
+
+                    <div class="navbar__icons">
+                        <button><i class="fa-solid fa-bars"></i>Menu</button>
+                    </div>
+
+                </div>
+
+            </nav>
+
+
+
+            <div class="hero__content section-center ">
+                <div class="hero__text">
+
+                    <p class="heading-2 font-w-200 hero__header">
+                        Best Design of <br>
+                        <span class="font-w-700"> Furniture Collections</span>
+                    </p>
+                    <p class="heading-5 hero__para">A small river named Duden flows by their place and supplies it with
+                        the
+                        necessary
+                        regelialia.</p>
+                    <button class="btn btn-white">Discover</button>
+                </div>
+                <div class="hero__imgBox">
+                    <img src="./furnish-img/bg_2.jpg" alt="" srcset="" class="hero__img">
+
+                </div>
             </div>
-            <div class="hero__img">
 
-            </div>
+
         </section>
 
     </header>
@@ -40,7 +78,7 @@
     <!-- hero section Ends -->
 
 
-
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+    background-color: #D4EAF5;
+    min-height: 100vh;
+
+    // &__content {
+
+    // display: flex;
+
+    // }
+
+    &__text {
+
+        width: 50%;
+    }
+
+    &__para {
+        width: 80%;
+        padding-bottom: 1rem;
+    }
+
+    &__header {
+        line-height: 54px;
+        padding-top: 12rem;
+    }
+
+    &__img {
+        height: 100%;
+        min-height: 100vh;
+        width: 50%;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        z-index: 0;
+
+
+    }
+
+}

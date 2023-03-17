@@ -20,6 +20,8 @@ dl,
 dd {
     margin: 0;
 
+
+
 }
 
 /* Make images easier to work with */
@@ -49,6 +51,7 @@ ol,
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 
 
 }
@@ -110,7 +113,9 @@ html {
     --clr-dark-blue: #0d6efd;
     --clr-para: #808080;
     --clr-lite-blue-500: #3099cd;
-    --clr-icons: #81c2e2;
+    --clr-navbar: #1c5b7b;
+
+
 
     --btn-box-shadow: box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
 
