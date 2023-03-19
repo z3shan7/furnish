@@ -2,6 +2,7 @@
     position: relative;
     background-color: #D4EAF5;
     min-height: 100vh;
+    z-index: 0;
 
     // &__content {
 
@@ -33,7 +34,7 @@
         right: 0;
         top: 0;
 
-        z-index: 0;
+        z-index: -1;
 
 
     }
