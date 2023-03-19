@@ -1,30 +1,47 @@
 .navbar {
-    // z-index: 10000;
-    // position: ;
+    padding: 1.2rem;
+    background-color: var(--clr-navbar);
 
-    // left: 20px;
 
 
     &__content {
-        padding: 2.5rem 0;
-        display: flex;
-        justify-content: space-between;
+        // width: 80%;
+        // margin: auto;
+
+
+
+        // old code <====
+        // padding: 2.5rem 0;
+        // display: flex;
+        // justify-content: space-between;
 
         // align-items: center;
     }
 
-    &__list {
-        // z-index: 1;
+    &__logoBox {
         display: flex;
-        gap: 45px;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &__logoLink {
-        font-size: 20px;
-        color: #000000;
-        font-weight: 700;
+    &__list {
+        // height: 0;
+        overflow: hidden;
 
+        // old code <====
+        // display: flex;
+        // gap: 45px;
     }
+
+    // &__logoLink {
+    //     color: #fff;
+    // }
+
+    .show-links {
+        height: 15rem;
+    }
+
+
 
     &__navLinks {
         color: rgba(0, 0, 0, 0.6);
@@ -38,24 +55,35 @@
     }
 
     &__icons {
-        display: none;
-        z-index: 4;
+        // display: none;
+        // z-index: 4;
     }
 
 
 }
 
-@media screen and (max-width:940px) {
+@media screen and (min-width:940px) {
 
     .navbar {
+        background-color: transparent;
 
-        background-color: var(--clr-navbar);
-        z-index: 100000;
+        // height: 100%s;
+        // position: relative;
+
 
         // display: none;
 
         &__content {
-            padding: .5rem 0;
+
+            // width: 1100px;
+            // margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .4rem .7rem;
+
+            // old code <==
+            // padding: .5rem 0;
             // display: flex;
             // justify-content: space-between;
 
@@ -63,12 +91,27 @@
         }
 
         &__logoLink {
-            color: #fff;
+            font-size: 1rem;
+            display: block;
+            color: #000000;
+            font-weight: 700;
         }
 
+
+
         &__list {
+            height: auto;
+            display: flex;
+            gap: 30px;
+
+            // gap: 10px;
             // background-color: var(--clr-navbar);
 
+        }
+
+        &__icons {
+            display: none;
+            // z-index: 4;
         }
     }
 }
