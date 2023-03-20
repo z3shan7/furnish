@@ -10,3 +10,11 @@ links.forEach((link) => {
         link.classList.add('active');
     });
 });
+
+const menuBtn = document.querySelector('.navbar__menuBtn')
+const list = document.querySelector('.navbar__list')
+
+menuBtn.addEventListener('click', () => {
+    list.classList.toggle('show-links')
+
+})

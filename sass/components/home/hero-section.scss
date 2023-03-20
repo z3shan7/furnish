@@ -4,11 +4,6 @@
     min-height: 100vh;
     z-index: 0;
 
-    // &__content {
-
-    // display: flex;
-
-    // }
 
     &__text {
 
@@ -36,6 +31,23 @@
 
         z-index: -1;
 
+
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .hero {
+
+        &__img {
+            display: none;
+
+        }
+
+        &__text {
+            width: 100%;
+        }
 
     }
 

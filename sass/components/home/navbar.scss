@@ -1,22 +1,10 @@
 .navbar {
-    padding: 1.2rem;
+    padding: .5rem 0;
     background-color: var(--clr-navbar);
 
 
 
-    &__content {
-        // width: 80%;
-        // margin: auto;
-
-
-
-        // old code <====
-        // padding: 2.5rem 0;
-        // display: flex;
-        // justify-content: space-between;
-
-        // align-items: center;
-    }
+    // &__content {}
 
     &__logoBox {
         display: flex;
@@ -24,29 +12,45 @@
         align-items: center;
     }
 
-    &__list {
-        // height: 0;
-        overflow: hidden;
-
-        // old code <====
-        // display: flex;
-        // gap: 45px;
+    &__logoLink {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
     }
 
-    // &__logoLink {
-    //     color: #fff;
-    // }
+    &__list {
+        // padding-top: 1.2rem;
+        height: 0;
+        overflow: hidden;
+        transition: all 400ms ease-in;
 
-    .show-links {
+
+
+    }
+
+    &__list.show-links {
         height: 15rem;
     }
 
 
 
     &__navLinks {
-        color: rgba(0, 0, 0, 0.6);
-        font-size: 14px;
-        font-weight: 500;
+        color: #fff;
+
+
+
+    }
+
+    &__menuBtn {
+        background: transparent;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
 
     }
 
@@ -54,10 +58,7 @@
         color: #fff !important;
     }
 
-    &__icons {
-        // display: none;
-        // z-index: 4;
-    }
+
 
 
 }
@@ -67,31 +68,21 @@
     .navbar {
         background-color: transparent;
 
-        // height: 100%s;
-        // position: relative;
 
-
-        // display: none;
 
         &__content {
 
-            // width: 1100px;
-            // margin: 0 auto;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: .4rem .7rem;
 
-            // old code <==
-            // padding: .5rem 0;
-            // display: flex;
-            // justify-content: space-between;
 
-            // align-items: center;
         }
 
         &__logoLink {
-            font-size: 1rem;
+            font-size: 20px;
             display: block;
             color: #000000;
             font-weight: 700;
@@ -102,16 +93,24 @@
         &__list {
             height: auto;
             display: flex;
-            gap: 30px;
+            gap: 45px;
+            transition: all 400ms ease-in;
 
-            // gap: 10px;
-            // background-color: var(--clr-navbar);
+
 
         }
 
         &__icons {
             display: none;
-            // z-index: 4;
+
+        }
+
+        &__navLinks {
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+            font-weight: 500;
+
+
         }
     }
 }
