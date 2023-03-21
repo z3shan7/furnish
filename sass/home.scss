@@ -58,7 +58,9 @@ body {
 .heading-3 {
     font-size: 38px;
     color: var(--clr-navy-blue);
+    line-height: 54px;
     font-weight: 500;
+    margin: 1rem 0;
 
 }
 
@@ -84,7 +86,7 @@ body {
 
 .heading-5 {
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.4);
+    // color: rgba(0, 0, 0, 0.4);
     font-weight: 400;
 
 
@@ -93,7 +95,7 @@ body {
 .heading-6 {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.3);
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
 
 
