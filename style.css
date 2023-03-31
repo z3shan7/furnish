@@ -38,7 +38,7 @@ body {
   color: var(--clr-navy-blue); }
 
 .heading-3 {
-  font-size: 38px;
+  font-size: 40px;
   color: var(--clr-navy-blue);
   line-height: 54px;
   font-weight: 500;
@@ -122,7 +122,8 @@ dd {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%; }
+  max-width: 100%;
+  display: block; }
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -363,3 +364,29 @@ html {
   .about__content {
     left: 50%;
     width: 80%; } }
+
+.projects__header {
+  text-align: center; }
+
+.projects__gallery {
+  display: flex; }
+  .projects__gallery__cols--1 {
+    flex-basis: 25%;
+    height: 340px; }
+  .projects__gallery__cols--2 {
+    flex-basis: 25%; }
+  .projects__gallery__cols--3 {
+    flex-basis: 50%; }
+
+.projects__imgs {
+  width: 100%; }
+
+.countUp {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-content: center; }
+  .countUp__numbers {
+    font-size: 40px;
+    color: #000; }

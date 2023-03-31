@@ -1,0 +1,42 @@
+.projects {
+
+    &__header {
+        text-align: center;
+
+    }
+
+    &__gallery {
+        display: flex;
+
+        // flex-wrap: wrap;
+        // gap: 10px;
+        // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+
+        &__cols--1 {
+            flex-basis: 25%;
+            height: 340px;
+        }
+
+        &__cols--2 {
+            flex-basis: 25%;
+        }
+
+        &__cols--3 {
+            flex-basis: 50%;
+        }
+    }
+
+    &__imgs {
+        // height: 340px;
+        width: 100%;
+        // object-fit: cover;
+        // width: 60px;
+    }
+
+    &__imgs--1 {
+        // grid-template-columns: span 2;
+        // width: 25%;
+    }
+
+}

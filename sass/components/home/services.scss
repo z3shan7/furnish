@@ -1,0 +1,14 @@
+.countUp {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-content: center;
+
+    &__numbers {
+
+        font-size: 40px;
+        color: #000;
+
+    }
+}
