@@ -1,6 +1,8 @@
 .testimonial {
+    background: #f7f7f7 !important;
+
     &__content {
-        background-color: rgb(202, 142, 142);
+        // background-color: rgb(202, 142, 142);
         padding-bottom: 5rem;
     }
 
@@ -16,7 +18,7 @@
         padding: 30px;
         position: relative;
         border-radius: 4px;
-        box-shadow: 0px 30px 33px 41px rgba(0, 0, 0, 0.24);
+        // box-shadow: 0px 30px 33px 41px rgba(0, 0, 0, 0.24);
 
     }
 
