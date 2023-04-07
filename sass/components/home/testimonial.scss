@@ -1,0 +1,79 @@
+.testimonial {
+    &__content {
+        background-color: rgb(202, 142, 142);
+        padding-bottom: 5rem;
+    }
+
+    &__card-wrapper {
+        padding-top: 5rem;
+        display: flex;
+        gap: 20px;
+
+    }
+
+    &__card {
+        background-color: #fff;
+        padding: 30px;
+        position: relative;
+        border-radius: 4px;
+        box-shadow: 0px 30px 33px 41px rgba(0, 0, 0, 0.24);
+
+    }
+
+    &__card:nth-of-type(2) {
+        background-color: var(--clr-orange);
+        color: #fff !important;
+    }
+
+    &__card:nth-of-type(2) &__name {
+        color: #fff;
+    }
+
+    &__card:nth-of-type(2) &__icon {
+        background-color: #fff;
+        color: var(--clr-orange);
+    }
+
+    // &__card:nth-of-type(2) &__job {
+    //     color: #fff;
+    // }
+
+    &__icon {
+        position: absolute;
+        top: -20px;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--clr-orange);
+
+        color: #fff;
+        font-size: 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 1.3rem;
+    }
+
+    &__img {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 0;
+        color: var(--clr-orange);
+    }
+
+}
