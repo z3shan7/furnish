@@ -2,7 +2,9 @@
     background-color: var(--clr-sky-600);
 
     &__content {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        gap: 20px;
         // flex-wrap: wrap;
     }
 

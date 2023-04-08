@@ -731,7 +731,9 @@ html {
 .footer {
   background-color: var(--clr-sky-600); }
   .footer__content {
-    display: flex; }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 20px; }
   .footer__logoLink {
     font-size: 20px;
     display: block;
