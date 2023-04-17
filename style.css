@@ -481,6 +481,18 @@ html {
     text-transform: uppercase;
     line-height: 2px; }
 
+@media screen and (max-width: 1122px) {
+  .countUp__div {
+    gap: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 840px) {
+  .countUp__div {
+    flex-direction: column;
+    gap: 20px; } }
+
 .testimonial {
   background: #f7f7f7 !important; }
   .testimonial__content {

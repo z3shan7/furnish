@@ -7,12 +7,12 @@
 
 
     &__div {
-        // max-width: 700px;
         margin: 0 auto;
         gap: 150px;
         display: flex;
         align-content: center;
         justify-content: center;
+
 
     }
 
@@ -33,4 +33,27 @@
         text-transform: uppercase;
         line-height: 2px;
     }
+}
+
+
+@media screen and (max-width:1122px) {
+    .countUp {
+        &__div {
+            gap: 60px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:840px) {
+    .countUp {
+        &__div {
+            flex-direction: column;
+            gap: 20px;
+
+        }
+    }
+
 }
