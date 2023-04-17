@@ -1,9 +1,15 @@
 .countUp {
-    padding: 8rem 0;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-content: center;
+    // padding: 8rem 0;
+
+
+
+    &__div {
+        gap: 50px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+    }
 
     &__numbers {
 

@@ -202,25 +202,34 @@
     </section>
 
 
-    <!-- <section class="countUp">
+    <section class="countUp">
 
-        <div class="countUp-col">
-            <h6 class="countUp__numbers" data-target="20">20</h6>
-
+        <div class="countUp__header">
+            <h6 class="heading-6">GREAT REVIEWS FOR OUR SERVICES</h6>
+            <h6 class="heading-3">Technical Statistics</h6>
         </div>
-        <div class="countUp-col">
 
-            <h6 class="countUp__numbers" data-target="10,200">10,200</h6>
-        </div>
-        <div class="countUp-col">
 
-            <h6 class="countUp__numbers" data-target="9,850">9,850</h6>
-        </div>
-        <div class="countUp-col">
-            <h6 class="countUp__numbers" data-target="20">20</h6>
 
+        <div class="countUp__div">
+
+            <div class="countUp-col">
+                <h6 class="countUp__numbers" id="counter1" data-target="20"></h6>
+            </div>
+            <div class="countUp-col">
+
+                <h6 class="countUp__numbers" id="counter2" data-target="10,200"></h6>
+            </div>
+            <div class="countUp-col">
+
+                <h6 class="countUp__numbers" id="counter3" data-target="9,850"></h6>
+            </div>
+            <div class="countUp-col">
+                <h6 class="countUp__numbers" id="counter4" data-target="20"></h6>
+
+            </div>
         </div>
-    </section> -->
+    </section>
 
 
     <section class="testimonial pd-bg">
@@ -595,7 +604,7 @@
     <script src="/swiper-bundle.min.js"></script>
 
 
-    <script src="app.js"></script>
+    <script src="app.js" type="module"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -603,6 +612,12 @@
             duration: 1000,
         });
     </script>
+    <!-- <script>
+        window.onload = function () {
+            const countUp = new CountUp('countUp__numbers', 2000);
+            countUp.start();
+        }
+    </script> -->
 </body>
 
 </html>

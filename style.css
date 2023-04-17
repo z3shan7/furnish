@@ -466,15 +466,15 @@ html {
   .projects__gallery > div:nth-child(6) {
     grid-column: 1/9; } }
 
-.countUp {
-  padding: 8rem 0;
-  display: flex;
-  justify-content: center;
+.countUp__div {
   gap: 50px;
-  align-content: center; }
-  .countUp__numbers {
-    font-size: 40px;
-    color: #000; }
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+
+.countUp__numbers {
+  font-size: 40px;
+  color: #000; }
 
 .testimonial {
   background: #f7f7f7 !important; }

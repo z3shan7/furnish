@@ -1,3 +1,5 @@
+import { CountUp } from './countUp.min.js';
+
 const links = document.querySelectorAll('.navbar__navLinks');
 
 
@@ -19,48 +21,6 @@ menuBtn.addEventListener('click', () => {
 
 })
 
-const counters = document.querySelectorAll('.countUp__numbers')
-
-let speed = 200;
-
-// counters.forEach((counter, index) => {
-
-//     function updateNumber() {
-
-//         const targerNumber = counter.dataset.target;
-//         const intialNumber = counter.innerText;
-//         const incPerCount = targerNumber / speed;
-//         if (intialNumber < targerNumber) {
-//             counter.textContent = Math.floor(intialNumber + incPerCount)
-//             setTimeout(updateNumber, 40)
-//         }
-
-//     }
-
-//     updateNumber()
-
-// })
-
-let interval = 1;
-
-counters.forEach((counter) => {
-    let starValue = 0;
-    let endValue = counter.getAttribute('data-target')
-
-    let duration = Math.floor(interval / endValue)
-
-    let count = setInterval(function () {
-        starValue += 1;
-        counter.textContent = starValue;
-        if (starValue == endValue) {
-            clearInterval(count)
-        }
-
-    }, 1)
-})
-
-// 
-
 var swiper = new Swiper(".testimonial__slide-content", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -69,3 +29,15 @@ var swiper = new Swiper(".testimonial__slide-content", {
         clickable: true,
     },
 });
+
+window.onload = function () {
+    const countUp1 = new CountUp('counter1', 20);
+    const countUp2 = new CountUp('counter2', 10200);
+    const countUp3 = new CountUp('counter3', 9850);
+    const countUp4 = new CountUp('counter4', 20);
+    // const count = new CountUp('counter2', 10000);
+    countUp1.start();
+    countUp2.start();
+    countUp3.start();
+    countUp4.start();
+}
