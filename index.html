@@ -14,6 +14,11 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- swiper js -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
     <!-- Count up js -->
 
     <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
@@ -215,21 +220,21 @@
         <div class="countUp__div " data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
 
             <div class="countUp-col" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                <h6 class="countUp__numbers" id="counter1" data-target="20"></h6>
+                <h6 class="countUp__numbers" id="counter1"></h6>
                 <p class="countUp__para">YEAR OF EXPERIENCED</p>
             </div>
             <div class="countUp-col" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
 
-                <h6 class="countUp__numbers" id="counter2" data-target="10,200"></h6>
+                <h6 class="countUp__numbers" id="counter2"></h6>
                 <p class="countUp__para">SATISFIED CUSTOMERS</p>
             </div>
             <div class="countUp-col" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
 
-                <h6 class="countUp__numbers" id="counter3" data-target="9,850"></h6>
+                <h6 class="countUp__numbers" id="counter3"></h6>
                 <p class="countUp__para">PROJECT COMPLETED</p>
             </div>
             <div class="countUp-col" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1100">
-                <h6 class="countUp__numbers" id="counter4" data-target="20"></h6>
+                <h6 class="countUp__numbers" id="counter4"></h6>
                 <p class="countUp__para">GET AWARDS</p>
 
             </div>
@@ -246,8 +251,8 @@
                 <h6 class="heading-3">Happy Customers</h6>
             </div>
 
-            <div class="testimonial__slides swiper">
-                <div class="testimonial__slide-content">
+            <div class="testimonial__slides ">
+                <div class="testimonial__slide-content swiper mySwiper">
 
 
 
@@ -311,7 +316,7 @@
                             </div>
 
                         </div>
-                        <!-- <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__card swiper-slide">
                             <span class="testimonial__icon"><i class="fa-solid fa-quote-left"></i></span>
                             <div class="testimonial__text">
                                 <p class="heading-5">Far far away, behind the word mountains, far from the countries
@@ -329,8 +334,8 @@
 
                             </div>
 
-                        </div> -->
-                        <!-- <div class="testimonial__card swiper-slide">
+                        </div>
+                        <div class="testimonial__card swiper-slide">
                             <span class="testimonial__icon"><i class="fa-solid fa-quote-left"></i></span>
                             <div class="testimonial__text">
                                 <p class="heading-5">Far far away, behind the word mountains, far from the countries
@@ -348,10 +353,10 @@
 
                             </div>
 
-                        </div> -->
+                        </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
+                <div class="swiper-pagination testimonial__pagination"></div>
             </div>
         </div>
 
@@ -605,11 +610,32 @@
 
     <!-- hero section Ends -->
 
-    <!-- swiper -->
-    <script src="/swiper-bundle.min.js"></script>
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="app.js" type="module"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -617,7 +643,7 @@
             duration: 1000,
         });
     </script>
-   
+
 </body>
 
 </html>

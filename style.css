@@ -106,6 +106,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+.swiper-slide {
+  margin-right: 0; }
+
 *,
 *::after,
 *::before {
@@ -494,15 +497,14 @@ html {
     gap: 20px; } }
 
 .testimonial {
-  background: #f7f7f7 !important; }
-  .testimonial__content {
-    padding-bottom: 5rem; }
+  background: #dc9595 !important;
+  position: relative; }
   .testimonial__card-wrapper {
-    padding-top: 5rem;
     display: flex;
-    gap: 20px; }
+    gap: 10px;
+    margin-right: 0; }
   .testimonial__card {
-    background-color: #fff;
+    background-color: #906464;
     padding: 30px;
     position: relative;
     border-radius: 4px; }
