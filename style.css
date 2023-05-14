@@ -17,6 +17,9 @@ body {
 .pd-top-bg {
   padding-top: 4rem; }
 
+.pd-bg {
+  padding-bottom: 2rem; }
+
 .pd-md {
   padding: 6rem 0; }
 
@@ -435,6 +438,12 @@ html {
     grid-column: 4/6; }
   .projects__gallery > div:nth-child(6) {
     grid-column: 6/9; }
+  .projects__gallery > div:nth-child(7) {
+    grid-column: 1/3; }
+  .projects__gallery > div:nth-child(8) {
+    grid-column: 3/6; }
+  .projects__gallery > div:nth-child(9) {
+    grid-column: 6/9; }
   .projects__imgs {
     width: 100%;
     height: 100%;
@@ -443,6 +452,32 @@ html {
     transition: all 0.3s ease; }
   .projects__imgs:hover {
     opacity: 0.7; }
+  .projects__page--list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; }
+  .projects__links {
+    display: none;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    border: 1px solid #e6e6e6;
+    background: trasparent;
+    transition: all 200ms ease-in; }
+  .projects__links:hover {
+    background-color: var(--clr-orange);
+    color: #fff;
+    cursor: pointer; }
+  .projects__active {
+    background-color: var(--clr-orange);
+    color: #fff; }
+  .projects__icon {
+    font-size: 12px; }
 
 @media screen and (max-width: 750px) {
   .projects__gallery {
@@ -497,19 +532,17 @@ html {
     gap: 20px; } }
 
 .testimonial {
-  background: #dc9595 !important;
   position: relative; }
   .testimonial__card-wrapper {
     display: flex;
     gap: 10px;
     margin-right: 0; }
   .testimonial__card {
-    background-color: #906464;
     padding: 30px;
     position: relative;
     border-radius: 4px;
     width: 400px;
-    overflow: visible; }
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.24) !important; }
   .testimonial__card:nth-of-type(2) {
     background-color: var(--clr-orange);
     color: #fff !important; }
