@@ -21,14 +21,6 @@ menuBtn.addEventListener('click', () => {
 
 })
 
-// var swiper = new Swiper(".testimonial__slide-content", {
-//     slidesPerView: 3,
-//     spaceBetween: 30,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-// });
 
 window.onload = function () {
     const countUp1 = new CountUp('counter1', 20);

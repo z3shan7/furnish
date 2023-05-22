@@ -162,15 +162,71 @@ body {
     // display: none;
 }
 
+header {
+    position: relative;
+}
 
-// .swiper,
-// swiper-container {
-// margin-left: auto;
-// margin-right: auto;
-// position: relative;
-//  overflow:visible !important; 
-// list-style: none;
-// padding: 0;
-// z-index: 1;
-// display: block
+.collection_img {
+    background-image: url(/furnish-img/bg_1.jpg);
+    background-size: cover;
+    height: 100vh;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+
+    // position: relative;
+
+    // z-index: 0;
+}
+
+
+
+.overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+    background: #052c43;
+    z-index: 0;
+}
+
+// .overlay {
+//     opacity: .2;
 // }
+
+.hero-title {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.links {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600 !important;
+    text-align: center;
+    font-family: var(--ffamily-poppins);
+    // cursor: pointer;
+}
+
+.home {
+    margin-right: 10px;
+    transition: all 200ms ease-in;
+}
+
+.home:hover {
+    color: var(--clr-orange);
+}
+
+.page-heading {
+    font-size: 70px;
+    color: #fff;
+}

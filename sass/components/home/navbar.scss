@@ -41,6 +41,10 @@
 
     }
 
+    &__navLinks:hover {
+        cursor: pointer;
+    }
+
     &__menuBtn {
         background: transparent;
         color: #fff;
