@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,14 +16,8 @@
     <!-- swiper js -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-
     <!-- Count up js -->
-
     <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
-
-
-
     <!-- CSS Links -->
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -34,7 +27,7 @@
     <title>furnish</title>
 </head>
 
-<body>
+<body class="contact__body">
     <!-- hero section -->
     <header class="collection_img ">
 
@@ -95,16 +88,36 @@
         <div class="contact__content">
             <div class="contact__header">
 
-                <p class="contact__header">Contact us</p>
+                <p class="heading-30px margin-b">Contact us</p>
                 <p class="contact__para">We're open for any suggestion or just to have a chat</p>
             </div>
             <div class="contact__details">
                 <div>
-                    <p class="address">ADDRESS:</p>
-                    <p class="contact__address--text">198 West 21th Street, Suite 721 New York NY 10016</p>
+                    <p class="contact__sub-heading">ADDRESS:</p>
+                    <p class="contact__address">198 West 21th Street, Suite 721 New York NY 10016</p>
                 </div>
-                
+                <div>
+                    <p class="contact__sub-heading">Email:</p>
+                    <p class="contact__text">info@yoursite.com</p>
+                </div>
+                <div>
+                    <p class="contact__sub-heading">phone:</p>
+                    <p class="contact__text">+ 1235 2355 98</p>
+                </div>
+
             </div>
+            <form action="#" class="contact__form">
+                <div class="contact__inputs">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="contact__textarea">
+
+                    <textarea name="message" class="form-control" placeholder="Create a message here"></textarea>
+                </div>
+            </form>
+
 
         </div>
     </div>
