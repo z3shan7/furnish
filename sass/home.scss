@@ -13,6 +13,22 @@ body {
     padding: 0 1rem;
 }
 
+.flex {
+    display: flex !important;
+    justify-content: center;
+    align-content: center;
+}
+
+// .flex-col {
+//     flex-direction: column;
+// }
+
+.grid {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
 .pd-bg {
     padding: 8rem 0;
 
@@ -229,4 +245,12 @@ header {
 .page-heading {
     font-size: 70px;
     color: #fff;
+}
+
+@media screen and (max-width:800px) {
+    .flex-col {
+        flex-direction: column;
+    }
+
+
 }
