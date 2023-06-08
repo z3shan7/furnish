@@ -4,12 +4,13 @@
     margin: 0 auto;
     width: 900px;
     padding: 2.5rem;
+    overflow: hidden;
 
     &__body {
         background: #f7f7f7 !important
     }
 
-    &__content {}
+    // &__content {}
 
     &__details {
         display: flex;
@@ -39,6 +40,7 @@
         margin-top: 1rem;
         display: flex;
         gap: 10px;
+
     }
 
     &__inputs input {
@@ -55,11 +57,20 @@
         border-radius: 2px;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        // resize: none;
+        resize: none;
+        // display: none;
 
     }
 
     &__inputs input::placeholder {
-        font-size: 14px;
+        font-size: 14px;et]hjh6
+    }
+
+    &__inputs input:hover {
+        // border-color: var();
+        outline: var(--clr-orange);
+
     }
 
 

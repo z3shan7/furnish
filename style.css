@@ -938,7 +938,8 @@ html {
   background-color: #fff;
   margin: 0 auto;
   width: 900px;
-  padding: 2.5rem; }
+  padding: 2.5rem;
+  overflow: hidden; }
   .contact__body {
     background: #f7f7f7 !important; }
   .contact__details {
@@ -971,6 +972,9 @@ html {
     padding: .5rem;
     border-radius: 2px;
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1); }
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    resize: none; }
   .contact__inputs input::placeholder {
     font-size: 14px; }
+  .contact__inputs input:hover {
+    outline: var(--clr-orange); }
