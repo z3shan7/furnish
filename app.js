@@ -1,6 +1,16 @@
 import { CountUp } from './countUp.min.js';
 
-const links = document.querySelectorAll('.navbar__navLinks');
+const navlinkEls = document.querySelectorAll('.navbar__navLinks');
+const windowPathname = window.location.pathname;
+
+navlinkEls.forEach(navlinkEl => {
+    const navLinkPathname = new URL(navlinkEl.href).pathname;
+
+
+    if ((windowPathname === navLinkPathname) || (windowPathname === '/index.html' && navLinkPathname === '/')) {
+        navlinkEl.classList.add('active')
+    }
+})
 
 
 // links.forEach((link) => {
@@ -12,6 +22,8 @@ const links = document.querySelectorAll('.navbar__navLinks');
 //         link.classList.add('active');
 //     });
 // });
+
+
 
 const menuBtn = document.querySelector('.navbar__menuBtn')
 const list = document.querySelector('.navbar__list')

@@ -303,7 +303,7 @@ html {
     align-items: center;
     gap: 10px; }
   .navbar__navLinks.active {
-    color: #fff !important; }
+    color: #ffffff !important; }
 
 @media screen and (min-width: 940px) {
   .navbar {
