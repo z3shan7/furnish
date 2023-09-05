@@ -1,14 +1,8 @@
 .testimonial {
-    // background: #dc9595 !important;
-    position: relative;
-    // overflow: visible;
+    background-color: #f7f7f7 !important;
 
-    // &__content {
-    // padding-bottom: 5rem;
-    // }
 
     &__card-wrapper {
-        // padding-top: 3rem;
         display: flex;
         gap: 10px;
         margin-right: 0;
@@ -20,9 +14,7 @@
         position: relative;
         border-radius: 4px;
         width: 400px;
-        // overflow: visible;
-        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.24) !important;
-        // display: none;
+        background-color: #fff;
     }
 
     &__card:nth-of-type(2) {
@@ -80,4 +72,21 @@
 
 
 
+}
+
+
+.swiper {
+    padding-top: 2em;
+    padding-bottom: 4.5em;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -5px;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--clr-orange);
+    height: 2px;
+    width: 30px;
 }

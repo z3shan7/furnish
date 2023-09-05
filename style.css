@@ -603,7 +603,7 @@ html {
     gap: 20px; } }
 
 .testimonial {
-  position: relative; }
+  background-color: #f7f7f7 !important; }
   .testimonial__card-wrapper {
     display: flex;
     gap: 10px;
@@ -613,7 +613,7 @@ html {
     position: relative;
     border-radius: 4px;
     width: 400px;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.24) !important; }
+    background-color: #fff; }
   .testimonial__card:nth-of-type(2) {
     background-color: var(--clr-orange);
     color: #fff !important; }
@@ -650,6 +650,19 @@ html {
     font-size: 20px;
     margin-bottom: 0;
     color: var(--clr-orange); }
+
+.swiper {
+  padding-top: 2em;
+  padding-bottom: 4.5em; }
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -5px; }
+
+.swiper-pagination-bullet {
+  background-color: var(--clr-orange);
+  height: 2px;
+  width: 30px; }
 
 .production {
   text-align: center;
